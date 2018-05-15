@@ -13,6 +13,10 @@
 		579B567520A9237800C1FBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579B567420A9237800C1FBCD /* Assets.xcassets */; };
 		579B567820A9237800C1FBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579B567620A9237800C1FBCD /* LaunchScreen.storyboard */; };
 		579B567B20A9237800C1FBCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B567A20A9237800C1FBCD /* main.m */; };
+		579B568320A923CB00C1FBCD /* PCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B568220A923CB00C1FBCD /* PCTestObject.m */; };
+		57CD0AA620AAC723006A7567 /* PCTableHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57CD0AA520AAC723006A7567 /* PCTableHeadView.xib */; };
+		57CD0AA920AAC735006A7567 /* PCTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CD0AA820AAC735006A7567 /* PCTableHeadView.m */; };
+		57CD0AAC20AAC90B006A7567 /* common_network_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57CD0AAB20AAC90B006A7567 /* common_network_refresh@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		579B567720A9237800C1FBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579B567920A9237800C1FBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		579B567A20A9237800C1FBCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		579B568120A923CB00C1FBCD /* PCTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCTestObject.h; sourceTree = "<group>"; };
+		579B568220A923CB00C1FBCD /* PCTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCTestObject.m; sourceTree = "<group>"; };
+		57CD0AA520AAC723006A7567 /* PCTableHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCTableHeadView.xib; sourceTree = "<group>"; };
+		57CD0AA720AAC735006A7567 /* PCTableHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCTableHeadView.h; sourceTree = "<group>"; };
+		57CD0AA820AAC735006A7567 /* PCTableHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCTableHeadView.m; sourceTree = "<group>"; };
+		57CD0AAB20AAC90B006A7567 /* common_network_refresh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common_network_refresh@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,16 @@
 		579B566A20A9237700C1FBCD /* TestPerformSelectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				57CD0AAA20AAC90B006A7567 /* Resource */,
 				579B566B20A9237700C1FBCD /* AppDelegate.h */,
 				579B566C20A9237700C1FBCD /* AppDelegate.m */,
 				579B566E20A9237700C1FBCD /* ViewController.h */,
 				579B566F20A9237700C1FBCD /* ViewController.m */,
+				579B568120A923CB00C1FBCD /* PCTestObject.h */,
+				579B568220A923CB00C1FBCD /* PCTestObject.m */,
+				57CD0AA720AAC735006A7567 /* PCTableHeadView.h */,
+				57CD0AA820AAC735006A7567 /* PCTableHeadView.m */,
+				57CD0AA520AAC723006A7567 /* PCTableHeadView.xib */,
 				579B567120A9237700C1FBCD /* Main.storyboard */,
 				579B567420A9237800C1FBCD /* Assets.xcassets */,
 				579B567620A9237800C1FBCD /* LaunchScreen.storyboard */,
@@ -69,6 +85,14 @@
 				579B567A20A9237800C1FBCD /* main.m */,
 			);
 			path = TestPerformSelectDemo;
+			sourceTree = "<group>";
+		};
+		57CD0AAA20AAC90B006A7567 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				57CD0AAB20AAC90B006A7567 /* common_network_refresh@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +152,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57CD0AA620AAC723006A7567 /* PCTableHeadView.xib in Resources */,
 				579B567820A9237800C1FBCD /* LaunchScreen.storyboard in Resources */,
 				579B567520A9237800C1FBCD /* Assets.xcassets in Resources */,
+				57CD0AAC20AAC90B006A7567 /* common_network_refresh@3x.png in Resources */,
 				579B567320A9237700C1FBCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +170,8 @@
 				579B567020A9237700C1FBCD /* ViewController.m in Sources */,
 				579B567B20A9237800C1FBCD /* main.m in Sources */,
 				579B566D20A9237700C1FBCD /* AppDelegate.m in Sources */,
+				579B568320A923CB00C1FBCD /* PCTestObject.m in Sources */,
+				57CD0AA920AAC735006A7567 /* PCTableHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

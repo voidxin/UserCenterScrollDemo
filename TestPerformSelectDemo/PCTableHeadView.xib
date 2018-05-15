@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PCTableHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="193"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_network_refresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-DR-d5y">
+                    <rect key="frame" x="0.0" y="0.0" width="316" height="107"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-Kf-XCH">
+                    <rect key="frame" x="119" y="63" width="79" height="67"/>
+                    <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="Ioq-PC-rS8"/>
+                        <constraint firstAttribute="width" constant="79" id="taQ-a9-MHm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tEa-Kf-XCH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0dK-wG-lcj"/>
+                <constraint firstItem="VSK-DR-d5y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="52S-hm-Ned"/>
+                <constraint firstAttribute="trailing" secondItem="VSK-DR-d5y" secondAttribute="trailing" id="GJh-4a-kg6"/>
+                <constraint firstItem="VSK-DR-d5y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YK2-PF-Dd8"/>
+                <constraint firstAttribute="bottom" secondItem="VSK-DR-d5y" secondAttribute="bottom" constant="86" id="duH-cb-WRh"/>
+                <constraint firstItem="tEa-Kf-XCH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wFa-dG-gvL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backImageView" destination="VSK-DR-d5y" id="Dfs-7P-lf2"/>
+                <outlet property="imageTopLayout" destination="YK2-PF-Dd8" id="T2f-i3-Qms"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="-21.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_network_refresh.png" width="217" height="130"/>
+    </resources>
+</document>
